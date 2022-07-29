@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edusera Courses</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <header>
         <!-- navbar starts --> 
-        <nav class="container navbar navbar-expand-lg "> 
+        <nav class="container navbar fixed-top navbar-expand-lg bg-light "> 
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><h1>Edusera</h1></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -24,19 +26,19 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="#course">Courses</a>
                         </li>
                         <li class="nav-item dropdown mx-3">
-                            <a class="nav-link" href="#">Deals </a>
+                            <a class="nav-link" href="#course">Deals </a>
                         </li>
                         <li class="nav-item dropdown mx-3">
-                            <a class="nav-link" href="#">Success </a>
+                            <a class="nav-link" href="#success">Success </a>
                         </li>
                         <li class="nav-item dropdown mx-3">
-                            <a class="nav-link" href="#">About </a>
+                            <a class="nav-link" href="#about">About </a>
                         </li>
                         <li class="nav-item dropdown mx-3">
-                            <a class="nav-link" href="#">Register </a>
+                            <a class="nav-link" href="#modal">Register </a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -52,23 +54,23 @@
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img style="filter: brightness(50%);" src="images/cover/cover-1.png" class="d-block w-100 h-80" alt="...">
-                            <div class="carousel-primary d-md-block position-absolute text-center text-white p-2">
-                                <h1 class="fw-bolder">Get Started Digital <br> Learning</h1>
-                                <p class="">It is a long established fact that a reader will be distracted by the readable <br>
-                                content of a page when looking at its layout</p>
-                                <div class="btn btn-primary btn-lg text-white">Get Started</div>
+                        <div class="d-flex justify-content-center align-items-center slide">
+                            <img style="filter: brightness(50%);" src="images/cover/cover-1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-primary d-md-block position-absolute text-center text-white ">
+                                <h1 class="fw-bolder">Learn Coding with <br> Edusera</h1>
+                                <p class="">Choose from many topics, skill levels, and languages. Study any topic when it suits you. <br>
+                                Explore thousands of high-quality courses.</p>
+                                <div class="btn btn-primary btn-lg text-white">Start Today</div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img style="filter: brightness(50%);" src="images/cover/cover-3.jpg" class="d-block w-100 h-75"
+                        <div class="d-flex justify-content-center align-items-center slide">
+                            <img style="filter: brightness(50%);" src="images/cover/cover-3.jpg" class="d-block w-100"
                                 alt="...">
                             <div class="carousel-primary  d-md-block position-absolute text-center text-white">
-                                <h1 class="fw-bolder fs-sm-4">Get Started Digital <br> Learning</h1>
-                                <p>It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout</p>
+                                <h1 class="fw-bolder">Learning was never that <br> EASY</h1>
+                                <p>Access 2000 free online courses from 140 leading institutions worldwide. Gain new skills and <br> earn a certificate of completion. Join today.</p>
                                 <div class="btn btn-primary btn-lg text-white">Get Started</div>
                             </div>
                         </div>
@@ -89,11 +91,10 @@
     </header>
     <main>
         <!-- Courses part starts  -->
-        <section class="container my-5 g-4">
+        <section class="container my-5 g-4" id="course">
             <div class="card-text my-5 text-center">
-                <h1>Discover Our Popular Courses</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout.</p>
+                <h1>Learn About Our Best Courses</h1>
+                <p>Learn new job skills in online courses from industry leaders like Google, IBM, & Meta.</p>
             </div>
             <div class="row row-cols-1 row-cols-md-1 g-4">
                 <div class="card mb-3 col-lg-6 col-md-12 g-3 border-0">
@@ -190,56 +191,56 @@
         <!-- Courses part ends  -->
 
         <!-- modal section starts  -->
-        <section class="container my-5">
-            <div class="bg-primary text-white p-5 m-5 d-flex align-items-center border rounded-1">
-                <div class="col-8">
+        <section class="container" id="modal" >
+            <div class="row my-5 bg-primary text-white p-lg-5 p-md-5 p-3 m-lg-5 m-md-5 m-sm-1 d-flex align-items-center border rounded-1">
+                <div class="col-lg-8 col-md-8 col-sm-12">
                     <h1>Ready to join?</h1>
                     <p>It is a long established fact that a reader will be distracted by the
                         readable content of a page when looking at its layout.</p>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
-                <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header text-center">
-                                <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body mx-3">
-                                <div class="md-form mb-5">
-                                    <i class="fas fa-envelope prefix grey-text"></i>
-                                    <input type="email" id="defaultForm-email" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-                                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light text-primary fw-semibold px-5 py-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Register
+                    </button>
                 
-                                <div class="md-form mb-4">
-                                    <i class="fas fa-lock prefix grey-text"></i>
-                                    <input type="password" id="defaultForm-pass" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold text-dark">Sign in</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+                                <div class="modal-body mx-3">
+                                    <div class="md-form mb-5">
+                                        <i class="fas fa-envelope prefix text-dark"></i>
+                                        <label class="text-dark" data-error="wrong" data-success="right" for="defaultForm-email">Your
+                                            email</label>
+                                        <input type="email" id="defaultForm-email" class="form-control validate text-dark">
+                                    </div>
                 
-                            </div>
-                            <div class="modal-footer d-flex justify-content-center">
-                                <button class="btn btn-default">Login</button>
+                                    <div class="md-form mb-4">
+                                        <i class="fas fa-lock prefix text-dark"></i>
+                                        <label class="text-dark" data-error="wrong" data-success="right" for="defaultForm-pass">Your
+                                            password</label>
+                                        <input type="password" id="defaultForm-pass" class="form-control validate text-dark">
+                                    </div>
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button class="btn btn-primary">Login</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="text-center">
-                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
-                        Modal Login Form</a>
-                </div>
-                </div>
-            </div>
+            </div>  
         </section>
         <!-- modal section ends  -->
 
         <!-- FAQ section starts  -->
-        <section class="container">
+        <section class="container" id="about">
             <div class="accordion-text text-center my-5">
                 <h1>Frequently Asked Questions</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable
@@ -307,7 +308,7 @@
         <!-- FAQ section ends  -->
 
         <!-- logo section  -->
-        <section class="container d-none d-lg-block my-5">
+        <section class="container d-none d-lg-block my-5" id="success">
             <div class="d-flex justify-content-center flex-column align-items-center">
                 <h1 class="m-5">Trusted by over 800+ companies</h1>
                 <div>
