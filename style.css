@@ -9,4 +9,7 @@
         .carousel-primary{
             padding-top: 30px;
         }
+        .carousel-primary h1{
+            font-size: 20px;
+        }
 }
